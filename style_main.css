@@ -42,14 +42,22 @@ p {
     margin-top: 2%;
 }
 
+.main-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .task-button {
+    position: absolute;
     padding: 1%;
     border-radius: 10px;
+    /* position: relative; */
 }
 
 .task-button:hover {
     padding: 1.1%;
     transition: 400ms;
     font-size: 15px;
-    border-radius: 40px;
+    border-radius: 13px;
 }
