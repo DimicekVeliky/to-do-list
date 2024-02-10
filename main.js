@@ -1,10 +1,10 @@
 let taskCount = 0;
 
 function addTask() {
-    let taskInput = document.getElementById("task-input");
+    let taskInput = document.getElementById("input-value");
     let taskText = taskInput.value;
-    let tasks = document.createElement("p");
-    let taskCounter = document.createElement("h2");
+    let tasks = document.createElement("h2");
+    let taskCounter = document.createElement("h3");
 
     if (taskText.trim() === "") {
         return;
@@ -17,7 +17,7 @@ function addTask() {
     taskInput.value = "";
 }
 
-document.getElementById("task-input").addEventListener("keypress", function(event) {
+document.getElementById("input-value").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         addTask();
     }

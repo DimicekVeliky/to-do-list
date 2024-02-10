@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_main.css">
     <title>To do list</title>
-    <div><h1 class="main-heading">TO DO LIST</h1></div>
 </head>
 <body>
+    <div><h1 class="main-heading">TO DO LIST</h1></div>
     <nav>
-        <div class="main-button">
+        <div class="task-input">
+            <input id="input-value" type="text">
+        </div>
+        <div id="main-button">
             <button class="task-button" onclick="addTask()">Create a task</button>
         </div>
-        <div><input id="task-input" type="text"></div>
-        <div class="task-list"></div>
-        <div class="task-counter"></div>
+        <div id="new-task">
+            <span class="task-counter"></span>
+            <span class="task-list"></span>
+        </div>
     </nav>
     
     <script src="main.js"></script>
