@@ -7,20 +7,18 @@
     <title>To do list</title>
 </head>
 <body>
-    <div><h1 class="main-heading">TO DO LIST</h1></div>
     <nav>
+        <div><h1 class="main-heading">TO DO LIST</h1></div>
         <div class="task-input">
             <input id="input-value" type="text">
         </div>
         <div id="main-button">
             <button class="task-button" onclick="addTask()">Create a task</button>
         </div>
-        <div id="new-task">
-            <span class="task-counter"></span>
-            <span class="task-list"></span>
-        </div>
+        <div id="new-task"></div>
     </nav>
     
     <script src="main.js"></script>
+    <script src="drag_and_drop.js"></script>
 </body>
 </html>
